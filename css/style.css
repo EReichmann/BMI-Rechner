@@ -37,3 +37,31 @@ p{
     font-family: Calibri;
     color: floralwhite;
 }
+
+input{
+    color: floralwhite;
+    font-size: 2.5rem;
+    background: #403B3B;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: black;
+}
+
+button{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.berechnungsbutton{
+    background-color: #5e2028;
+    color: floralwhite;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.berechnungsbutton:hover{
+    background-color: #4d1a1f;
+}

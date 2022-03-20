@@ -10,8 +10,9 @@
 <div>
     <h1>Dein kostenloser BMI-Rechner</h1>
      <h2>Gliederung</h2>
-     <a href="#erstens">1.Was ist der BMI?</a> <br>
-     <a href="#zweitens">2.Wie wird der BMI ausgerechnet?</a>
+     <a href="#erstens">1. Was ist der BMI?</a> <br>
+     <a href="#zweitens">2. Wie wird der BMI ausgerechnet?</a> <br>
+     <a href="#drittens">3. BMI-Rechner</a>
      <br>
      <h2 id="erstens">Was ist der BMI?</h2>
      <p>Der Body-Mass-Index, kurz BMI, ist ein Index, um das Verhältnis von Körpergewicht zur Körpergröße zu berechnen.
@@ -49,6 +50,24 @@
          Der BMI der Frau ist jetzt berechnet, doch was bedeutet die Zahl? Um den Body Mass Index zu bewerten, gibt es
          verschiedene Einteilungen, teilweise werden auch Alter und Geschlecht berücksichtigt. Die wichtigste Einteilung
          stammt von der Weltgesundheitsorganisation (WHO).</p>
- </div>
+    <h2 id="drittens">Der BMI-Rechner</h2>
+    <p>Um dein BMI Wert zu berechnen benötigen wir deine Körpergröße in m und dein Gewicht in kg.</p>
+    <!-- Textfeld Größe -->
+    <p>Gib hier deine Körpergröße ein: </p><input type="number" id="Größe">
+    <br>
+
+    <p>Gib hier dein Körpergewicht ein: </p><input type="number" id="Gewicht">
+    <br>
+    <br>
+    <br>
+    <button class="berechnungsbutton" onclick="berechnen()">BERECHNEN</button>
+    <br>
+    <br>
+    <p id="anzeige"></p>
+    <p id="ergebnis"></p>
+
+
+
+</div>
 </body>
 </html>
