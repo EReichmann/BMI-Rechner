@@ -38,15 +38,6 @@ p{
     color: floralwhite;
 }
 
-input{
-    color: floralwhite;
-    font-size: 2.5rem;
-    background: #403B3B;
-    border-left: none;
-    border-top: none;
-    border-right: none;
-    border-bottom-color: black;
-}
 
 button{
     font-size: 2rem;
@@ -64,4 +55,13 @@ button{
 
 .berechnungsbutton:hover{
     background-color: #4d1a1f;
+}
+
+.mdl-textfield__label{
+    color: floralwhite;
+}
+
+.hinweis{
+    font-size: 1.4rem;
+    color: grey;
 }

@@ -23,4 +23,9 @@ function berechnen() {
         document.getElementById("ergebnis").innerHTML=""
     }
 
+    if (isNaN(BMI)){
+        document.getElementById("anzeige").innerHTML="Mindestens einer der Werte ist keine Zahl. Bitte geben sie eine Zahl ein ;)";
+        document.getElementById("ergebnis").innerHTML=""
+    }
+
 }
