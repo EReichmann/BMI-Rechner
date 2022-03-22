@@ -11,14 +11,19 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
 
+
+
 </head>
 <body>
 <div>
     <h1>Dein kostenloser BMI-Rechner</h1>
-     <h2>Gliederung</h2>
+    <div class="picture">
+        <img alt="Gewichtsklassen" src="img/gewichtsklassen.jpg" width="328" height="200">
+    </div> <br>
      <a href="#erstens">1. Was ist der BMI?</a> <br>
      <a href="#zweitens">2. Wie wird der BMI ausgerechnet?</a> <br>
-     <a href="#drittens">3. BMI-Rechner</a>
+     <a href="#drittens">3. Einteilung der BMI-Werte</a> <br>
+     <a href="#viertens">4. BMI-Rechner</a>
      <br>
      <h2 id="erstens">Was ist der BMI?</h2>
      <p>Der Body-Mass-Index, kurz BMI, ist ein Index, um das Verhältnis von Körpergewicht zur Körpergröße zu berechnen.
@@ -56,16 +61,36 @@
          Der BMI der Frau ist jetzt berechnet, doch was bedeutet die Zahl? Um den Body Mass Index zu bewerten, gibt es
          verschiedene Einteilungen, teilweise werden auch Alter und Geschlecht berücksichtigt. Die wichtigste Einteilung
          stammt von der Weltgesundheitsorganisation (WHO).</p>
-    <h2 id="drittens">Der BMI-Rechner</h2>
-    <p>Um dein BMI Wert zu berechnen benötigen wir deine Körpergröße in m und dein Gewicht in kg.</p>
+    <h2 id="drittens">Einteiling der BMI-Werte</h2>
+    <p>Starkes Untergewicht: BMI < 17,0 <br>
+        Untergewicht: BMI 17,1-18,5 <br>
+        Normalgewicht: BMI 18,5-24,9 <br>
+        Übergewicht: BMI 25-29,9 <br>
+        Starkes Übergewicht (Adipositas Grad I): BMI 30-34,9 <br>
+        Adipositas Grad II: BMI 35-39,9 <br>
+        Adipositas Grad III: BMI > 40 </p>
+    <p class="hinweis">Achtung die hier angegebenen Werte sind für die Altersgruppe von 19-24 Jahren vorgesehen. Jedoch ist die Auswertung im Rechner an diesen Faktor angepasst.<br>
+        Ebenfalls ist zu beachten, dass das Ergebnis nichts über die Muskelmasse aussagt, sondern sich nur auf das Verhältnis zwischen Gewicht und Körpergröße konzentriert. </p>
+       <p>Die Frau aus unserem Beispiel hat laut BMI-Rechner einen Body Mass Index von 23,5 und damit Normalgewicht.</p>
+    <h2 id="viertens">Der BMI-Rechner</h2>
+    <p>Um dein BMI Wert zu berechnen benötigen wir deine Körpergröße in m und dein Gewicht in kg, genauso wie ihr Alter zur Zuordnung der Auswertung.</p>
     <br>
+    <p>Gib hier dein Alter an:</p>
+    <!-- Numeric Textfield with Floating Label -->
+    <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Alter">
+            <label class="mdl-textfield__label" for="Alter">Alter...</label>
+            <span class="mdl-textfield__error">Bitte gib eine Zahl ein</span>
+        </div>
+    </form>
     <p>Gib hier deine Körpergröße in Meter ein:</p>
     <!-- Numeric Textfield with Floating Label -->
     <form action="#">
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Größe">
             <label class="mdl-textfield__label" for="Größe">Körpergröße...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
+            <span class="mdl-textfield__error">Bitte gib eine Zahl ein</span>
         </div>
     </form>
     <p class="hinweis">Die Zahl muss mit einem Punkt geschrieben werden </p>
@@ -75,7 +100,7 @@
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Gewicht">
             <label class="mdl-textfield__label" for="Gewicht">Körpergewicht...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
+            <span class="mdl-textfield__error">Bitte gib eine Zahl ein</span>
         </div>
     </form>
     <p class="hinweis">Die Zahl muss mit einem Punkt geschrieben werden </p>
@@ -83,11 +108,12 @@
     <button class="berechnungsbutton" onclick="berechnen()">BERECHNEN</button>
     <br>
     <br>
+    <p id="altershinweis"></p>
+    <p id="realistisch"></p>
+    <p id="realistisch2"></p>
     <p id="anzeige"></p>
     <p id="ergebnis"></p>
-
-
-
+    <p id="auswertung"></p>
 </div>
 </body>
 </html>

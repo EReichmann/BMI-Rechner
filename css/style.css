@@ -4,10 +4,13 @@ html{
 }
 
 div{
-    width: 97%;
+    width: 99%;
     margin: auto;
 }
 
+.picture{
+    text-align: center;
+}
 
 h1{
     color: cadetblue;
